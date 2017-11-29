@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import moment from 'moment';
 
+import icons from '../services/Icon';
+
 export default class MainWeather extends React.Component {
     static propTypes = {
         temperature: PropTypes.number,
@@ -20,8 +22,8 @@ export default class MainWeather extends React.Component {
                 <Text style={{ color: 'white', fontSize: 35, fontWeight: '100', marginTop: 40 }}>
                     {today.format('dddd')}
                 </Text>
-                <Image source={{ uri: "http://files.softicons.com/download/web-icons/android-weather-icons-by-bharath-prabhuswamy/png/512x512/Slight%20Drizzle.png" }}
-                    style={{ width: 300, height: 300 }} />
+                <Image source={icons[this.props.icon]}
+                    style={{ margin: 40 }} />
                 <View style={{ flexDirection: 'row', backgroundColor: '#777', padding: 30 }}>
                     <View style={{ flex: 1 }}>
                         <Text style={{ color: 'white', fontSize: 70, fontWeight: '100' }}>

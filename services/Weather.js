@@ -1,12 +1,14 @@
 const mapResult = (res) => {
     const { temp, pressure, humidity } = res.main;
     const { speed: wind } = res.wind;
+    const { icon } = res.weather[0];
 
     return {
-        temp: Math.round(temp), 
+        temp: Math.round(temp),
         pressure: Math.round(pressure),
         humidity: Math.round(humidity),
-        wind: Math.round(wind)
+        wind: Math.round(wind),
+        icon
     };
 };
 
