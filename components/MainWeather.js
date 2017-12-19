@@ -7,6 +7,7 @@ import icons from '../services/Icon';
 
 export default class MainWeather extends React.Component {
     static propTypes = {
+        city: PropTypes.string,
         temperature: PropTypes.number,
         humidity: PropTypes.number,
         wind: PropTypes.number,
@@ -19,11 +20,14 @@ export default class MainWeather extends React.Component {
 
         return (
             <View style={{ backgroundColor: '#555', width: '100%', alignItems: 'center', justifyContent: 'center' }} >
-                <Text style={{ color: 'white', fontSize: 35, fontWeight: '100', marginTop: 40 }}>
+                <Text style={{ color: 'white', fontSize: 35, fontWeight: '100', marginTop: 20 }}>
+                    {this.props.city}
+                </Text>
+                <Text style={{ color: 'white', fontSize: 17.5, fontWeight: '400', marginTop: 0 }}>
                     {today.format('dddd')}
                 </Text>
                 <Image source={icons[this.props.icon]}
-                    style={{ margin: 40 }} />
+                    style={{ margin: 20 }} />
                 <View style={{ flexDirection: 'row', backgroundColor: '#777', padding: 30 }}>
                     <View style={{ flex: 1 }}>
                         <Text style={{ color: 'white', fontSize: 70, fontWeight: '100' }}>
