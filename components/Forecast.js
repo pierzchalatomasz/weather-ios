@@ -39,13 +39,13 @@ const styles = StyleSheet.create({
     textInfoLarge: {
         color: 'white',
         textAlign: 'left',
-        fontSize: 22.5,
+        fontSize: 15,
         marginBottom: 15
     },
     textInfoSmall: {
         color: 'white',
         textAlign: 'left',
-        fontSize: 15,
+        fontSize: 12.5,
         margin: 2
     },
 });

@@ -28,9 +28,9 @@ export default class MainWeather extends React.Component {
                 </Text>
                 <Image source={icons[this.props.icon]}
                     style={{ margin: 20 }} />
-                <View style={{ flexDirection: 'row', backgroundColor: '#777', padding: 30 }}>
+                <View style={{ flexDirection: 'row', backgroundColor: '#777', padding: 10 }}>
                     <View style={{ flex: 1 }}>
-                        <Text style={{ color: 'white', fontSize: 70, fontWeight: '100' }}>
+                        <Text style={{ color: 'white', fontSize: 35, fontWeight: '100' }}>
                             {this.props.temperature}&deg;C
                         </Text>
                     </View>
@@ -49,6 +49,6 @@ const styles = StyleSheet.create({
     textInfo: {
         color: 'white',
         textAlign: 'left',
-        fontSize: 17.5
+        fontSize: 12.5
     },
 });

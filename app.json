@@ -4,6 +4,7 @@
     "version": "1.0.0",
     "slug": "weather",
     "sdkVersion": "22.0.0",
+    "orientation": "portrait",
     "ios": {
       "bundleIdentifier": "com.yourcompany.weather"
     }
